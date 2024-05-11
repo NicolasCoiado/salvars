@@ -62,6 +62,11 @@
     color: black;
     font-weight: bold;
 }
+
+html{
+    scroll-behavior: smooth;
+ }
+ 
 @media screen and (min-width: 600px){
     .start h1{
         font-size: 5em;
@@ -94,6 +99,9 @@
         font-size: 1em;
         line-height: 2.5vh;
     }
+    #floating-bottom{
+        display: none;
+    }
 }
 @media screen and (max-width: 599px){
     .start h1{
@@ -123,6 +131,25 @@
         margin-bottom: 2vh;
         font-size: 0.8em;
         line-height: 3vh;
+    }
+    #floating-bottom{
+        position: fixed;
+        right: 2em;
+        bottom: 2em;
+        text-decoration: none;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border-radius: 100%;
+        font-size: 0.8em;
+        width: 5vw;
+        height: 5vw;
+        text-align: center;
+    }
+    #floating-bottom:hover{
+        position: none;
     }
 }
 /*RESET CSS*/
