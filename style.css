@@ -7,21 +7,18 @@
     font-family:'Poppins', Arial, sans-serif;
     width: 100vw;
     height: 30vh;
-    background-image: url(./img/background.jpg);
+    background-image: url(./img/background.svg);
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.start h1{
+.logo{
     background-color: black;
-    font-weight: bold;
-    color: white;
+    border-radius: 1em;
 }
-.start h1 label{
-    color: rgb(170, 1, 1);   
-}
+
 .start h2{
     background-color: white;
     font-weight: bold;
@@ -51,7 +48,7 @@
 }
 #txt a{
     font-weight: bold;
-    color: red;
+    color: #009234;
 }
 #ctt-area{
 }
@@ -68,9 +65,17 @@ html{
  }
  
 @media (min-width: 600px){
-    .start h1{
-        font-size: 5em;
-        padding: 0.2em 0.5em;
+    @media (min-width: 600px) and (max-width: 1000px){
+        .logo{
+            padding: 1%;
+            width: 35%;
+        }
+    }
+    @media (min-width: 1001px){
+        .logo{
+            padding: 1%;
+            width: 15%;
+        }
     }
     .start h2{
         font-size: 1.3em;
@@ -104,10 +109,19 @@ html{
     }
 }
 @media (max-width: 599px){
-    .start h1{
-        font-size: 3em;
-        padding: 0.2em 0.5em;
+    @media (max-width: 450px){
+        .logo{
+            padding: 4%;
+            width: 55%;
+        }
     }
+    @media (max-width: 599px){
+        .logo{
+            padding: 3%;
+            width: 40%;
+        }
+    }
+
     .start h2{
         font-size: 0.8em;
         padding: 0.5em;
